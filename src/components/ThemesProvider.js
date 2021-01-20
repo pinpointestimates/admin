@@ -2,7 +2,7 @@ import { useApolloClient, gql } from '@apollo/client';
 import React, { useState, createContext } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
-import { BodyBackground } from '../stylings/colors';
+import { BodyBackground } from '../stylings/Colors';
 
 const DEFAULT_STATE = {
   lightTheme: false,
@@ -14,7 +14,6 @@ const GlobalStyle = createGlobalStyle`
       scroll-behavior: smooth;
       background: ${BodyBackground};
   }
-
   input {
     filter: none;
   }
