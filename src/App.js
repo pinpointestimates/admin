@@ -1,10 +1,13 @@
 import ApolloWrapper from './components/ApolloWrapper';
 import Routes from './components/Routes';
+import { ThemesProvider } from './components/ThemesProvider';
 
 function App() {
   return (
     <ApolloWrapper>
-      <Routes />
+      <ThemesProvider>
+        <Routes />
+      </ThemesProvider>
     </ApolloWrapper>
   );
 }

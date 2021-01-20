@@ -1,9 +1,10 @@
 import {
   ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  HttpLink,
   ApolloLink,
+  ApolloProvider,
+  gql,
+  HttpLink,
+  InMemoryCache,
 } from '@apollo/client';
 import { onError } from '@apollo/client/link/error';
 
@@ -48,6 +49,28 @@ const ApolloWrapper = ({ children }) => {
   const client = new ApolloClient({
     link: logoutLink.concat(authLink).concat(httpLink), // Chain it with the HttpLink
     cache,
+  });
+
+  const query = gql`
+    query Theme {
+      theme {
+        light
+      }
+    }
+  `;
+
+  // Create a new to-do item
+  const initTheme = {
+    light: false,
+    __typename: 'Theme',
+  };
+
+  // Write back to the to-do list, appending the new item
+  client.writeQuery({
+    query,
+    data: {
+      theme: initTheme,
+    },
   });
 
   return <ApolloProvider client={client}>{children}</ApolloProvider>;
