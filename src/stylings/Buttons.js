@@ -1,6 +1,6 @@
-// import styled from 'styled-components';
-// import theme from 'styled-theming';
-// import Colors from '../colors/Colors';
+import styled from 'styled-components';
+import theme from 'styled-theming';
+import Colors from './Colors';
 
 // const buttonBackgroundColor = theme.variants('mode', 'kind', {
 //   teal: { light: Colors.teal, dark: Colors.blue },
@@ -36,36 +36,60 @@
 //   blue: { light: Colors.grayDarkBorder, dark: Colors.grayDarkBorder },
 // });
 
-// export const Button = styled.button`
-//   padding: 0.4em 2em;
-//   border-radius: 0.3em;
-//   border: 0;
-//   background-color: ${buttonBackgroundColor};
-//   color: ${buttonColor};
-//   cursor: pointer;
-//   width: max-content;
+export const PrimaryBackground = theme('mode', {
+  light: Colors.teal,
+  dark: Colors.darkBlue,
+});
 
-//   font-family: Poppins;
-//   font-size: 0.6em;
-//   font-weight: 600;
-//   font-style: normal;
-//   font-stretch: normal;
-//   line-height: normal;
-//   letter-spacing: 0px;
+export const PrimaryColor = theme('mode', {
+  light: Colors.white,
+  dark: Colors.white,
+});
 
-//   box-shadow: 0px 0.2em 0px ${buttonBorderColor};
+export const PrimaryBorder = theme('mode', {
+  light: Colors.teal,
+  dark: Colors.black,
+});
 
-//   :focus {
-//     outline: none;
-//   }
+export const PrimaryShadow = theme('mode', {
+  light: Colors.tealBorder,
+  dark: Colors.red,
+});
 
-//   :disabled {
-//     background-color: ${buttonBackgroundColorDisabled};
-//     box-shadow: 0px 0.2em 0px ${buttonBorderColorDisabled};
+export const PrimaryDisabled = theme('mode', {
+  light: Colors.gray,
+  dark: Colors.gray,
+});
 
-//     box-shadow: 0;
-//   }
-// `;
+export const Button = styled.button`
+  padding: 0.4em 2em;
+  border-radius: 0.3em;
+  border: 1px solid ${PrimaryBorder};
+  background-color: ${PrimaryBackground};
+  color: ${PrimaryColor};
+  cursor: pointer;
+  width: max-content;
+
+  font-family: Poppins;
+  font-size: 0.6em;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+
+  box-shadow: 0px 0.2em 0px ${PrimaryShadow};
+
+  :focus {
+    outline: none;
+  }
+
+  :disabled {
+    background-color: ${PrimaryDisabled};
+    box-shadow: 0px 0.2em 0px ${PrimaryDisabled};
+    border: 1px solid ${PrimaryDisabled};
+  }
+`;
 
 // export const ButtonRounded = styled.button`
 //   padding: 0.8em;

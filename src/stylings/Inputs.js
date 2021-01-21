@@ -1,30 +1,42 @@
-// import styled from 'styled-components';
-// import { TextColorError } from '../colors/TextColors';
-// import Colors from '../colors/Colors';
-// import checker from '../../Assets/Components/Checkbox/checker.png';
+import styled from 'styled-components';
+import theme from 'styled-theming';
+import Colors from './Colors';
 
-// export const Input = styled.input`
-//   width: 100%;
-//   /* height: 48px; */
-//   border-radius: 4px;
-//   box-shadow: 0 18px 46px -11px rgba(214, 227, 227, 0.53);
-//   border: solid 1px ${Colors.teal};
-//   padding: 0.8em 0.8em;
-//   box-sizing: border-box;
+export const PrimaryInputColor = theme('mode', {
+  light: Colors.gray,
+  dark: Colors.gray,
+});
 
-//   font-family: Lato;
-//   font-size: 0.6em;
-//   font-weight: normal;
-//   font-style: normal;
-//   font-stretch: normal;
-//   line-height: 1.71;
-//   letter-spacing: 0px;
-//   color: #000000;
+export const PrimaryInputFocus = theme('mode', {
+  light: Colors.grayDark,
+  dark: Colors.grayDark,
+});
 
-//   :focus {
-//     outline: ${Colors.teal} auto 2px;
-//   }
-// `;
+export const PrimaryInputColorText = theme('mode', {
+  light: Colors.black,
+  dark: Colors.black,
+});
+
+export const Input = styled.input`
+  width: 100%;
+  border-radius: 4px;
+  border: solid 1px ${PrimaryInputColor};
+  background: ${PrimaryInputColor};
+  padding: 0.8em 0.8em;
+  box-sizing: border-box;
+  font-family: Lato;
+  font-size: 0.6em;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: 0px;
+  color: ${PrimaryInputColorText};
+
+  :focus {
+    outline: ${PrimaryInputFocus} auto 2px;
+  }
+`;
 
 // export const Textarea = styled.textarea`
 //   width: 100%;

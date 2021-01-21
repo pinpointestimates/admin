@@ -23,34 +23,34 @@ const Colors = {
   orange: '#e7635f',
 };
 
-export const BodyBackground = theme('mode', {
+export const DarkBackground = theme('mode', {
   light: Colors.gray,
   dark: Colors.darkBlue,
 });
 
-export const ContainerBackground = theme('mode', {
-  light: Colors.white,
-  dark: Colors.blue,
-});
+// export const ContainerBackground = theme('mode', {
+//   light: Colors.white,
+//   dark: Colors.blue,
+// });
 
-export const ContainerBackgroundAccent = theme('mode', {
-  light: Colors.blue,
-  dark: Colors.teal,
-});
+// export const ContainerBackgroundAccent = theme('mode', {
+//   light: Colors.blue,
+//   dark: Colors.teal,
+// });
 
-export const ContainerBackgroundNeutral = theme('mode', {
-  light: Colors.gray,
-  dark: Colors.gray,
-});
+// export const ContainerBackgroundNeutral = theme('mode', {
+//   light: Colors.gray,
+//   dark: Colors.gray,
+// });
 
-export const ModalInfoBackground = theme('mode', {
-  light: Colors.gray,
-  dark: Colors.gray,
-});
+// export const ModalInfoBackground = theme('mode', {
+//   light: Colors.gray,
+//   dark: Colors.gray,
+// });
 
-export const FooterBackground = theme('mode', {
-  light: Colors.blue,
-  dark: Colors.blue,
-});
+// export const FooterBackground = theme('mode', {
+//   light: Colors.blue,
+//   dark: Colors.blue,
+// });
 
 export default Colors;
