@@ -1,7 +1,5 @@
-import { useApolloClient, gql } from '@apollo/client';
-import React, { useState, createContext } from 'react';
-import { ThemeProvider } from 'styled-components';
-import { createGlobalStyle } from 'styled-components';
+import React, { createContext, useState } from 'react';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { DarkBackground } from '../stylings/Colors';
 
 const DEFAULT_STATE = {
@@ -33,31 +31,9 @@ const GlobalStyle = createGlobalStyle`
 
 export const ThemesContext = createContext(DEFAULT_STATE);
 
-const query = gql`
-  query Theme {
-    theme {
-      light
-    }
-  }
-`;
-// const GET_COUNTER = gql`
-//   query GetTheme {
-//     theme @client
-//   }
-// `;
-//TODO store settings
 export const ThemesProvider = (props) => {
   const [lightTheme, setLightTheme] = useState(false);
-  const client = useApolloClient();
-  const data = client.readQuery({ query });
-
-  console.log(data);
-  // console.log(data);
-  // const {
-  //   data: { theme },
-  // } = useQuery(GET_COUNTER);
-  // console.log(theme);
-  // TODO remove these
+  // TODO store in localstorage
 
   const theme = { light: false };
 

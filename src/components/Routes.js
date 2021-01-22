@@ -6,6 +6,7 @@ import {
   Redirect,
 } from 'react-router-dom';
 import Loading from './Loading';
+import ProtectedRoute from './ProtectedRoute';
 
 // Pages
 import Home from '../pages/Home';
@@ -19,7 +20,7 @@ const Routes = () => {
       <Suspense fallback={<Loading />}>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/admin' component={Admin} />
+          <ProtectedRoute exact path='/admin' component={Admin} />
           {/*<Route path='/404' component={PageNoteFound} /> */}
           <Redirect to='/404' />
         </Switch>

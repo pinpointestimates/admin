@@ -68,7 +68,7 @@ const Login = withRouter(({ history }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
-  const [signIn, { client }] = useMutation(SIGNIN, {
+  const [signIn] = useMutation(SIGNIN, {
     onError: (error) => {
       // setShowError(true);
       setLoading(false);
@@ -77,12 +77,9 @@ const Login = withRouter(({ history }) => {
     onCompleted: (data) => {
       if (!!data && !!data.signIn && !!data.signIn.accessToken) {
         const { accessToken } = data.signIn;
-        localStorage.setItem('token', accessToken);
-        const { slug, roles } = parseAccessToken(accessToken);
-
+        const { slug } = parseAccessToken(accessToken);
         console.log(slug);
-        console.log(roles);
-
+        localStorage.setItem('token', accessToken);
         history.push('/admin');
       }
     },

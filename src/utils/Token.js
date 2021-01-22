@@ -18,7 +18,9 @@ export const parseAccessToken = (accessToken) => {
       slugId = jwtDecode(token)[slug];
       rolesArr = jwtDecode(token)[roles];
     }
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
 
   return { slug: slugId, roles: rolesArr };
 };
