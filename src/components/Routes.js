@@ -21,7 +21,6 @@ const Routes = () => {
         <Switch>
           <Route exact path='/' component={Home} />
           <ProtectedRoute exact path='/admin' component={Admin} />
-          {/*<Route path='/404' component={PageNoteFound} /> */}
           <Redirect to='/404' />
         </Switch>
       </Suspense>

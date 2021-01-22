@@ -3,7 +3,7 @@ import theme from 'styled-theming';
 import Colors from './Colors';
 
 export const LightBackground = theme('mode', {
-  light: Colors.gray,
+  light: Colors.white,
   dark: Colors.blue,
 });
 

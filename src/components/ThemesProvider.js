@@ -35,8 +35,6 @@ export const ThemesProvider = (props) => {
   const [lightTheme, setLightTheme] = useState(false);
   // TODO store in localstorage
 
-  const theme = { light: false };
-
   const toggleTheme = () => {
     setLightTheme(!lightTheme);
   };
@@ -48,7 +46,7 @@ export const ThemesProvider = (props) => {
         toggleTheme: toggleTheme,
       }}
     >
-      <ThemeProvider theme={{ mode: !!theme.light ? 'light' : 'dark' }}>
+      <ThemeProvider theme={{ mode: lightTheme ? 'light' : 'dark' }}>
         <>
           {props.children}
           <GlobalStyle />

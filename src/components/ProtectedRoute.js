@@ -25,8 +25,6 @@ const ProtectedRoute = ({ component: Component, history, ...rest }) => {
     fetchPolicy: 'network-only',
   });
 
-  console.log(data);
-
   useEffect(() => {
     userQuery({
       variables: {

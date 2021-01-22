@@ -1,6 +1,7 @@
 import React from 'react';
 import Colors from '../stylings/Colors';
 import styled from 'styled-components';
+import { Layout } from '../components/Layout';
 
 const AdminContainer = styled.div`
   display: flex;
@@ -16,9 +17,11 @@ const H1 = styled.h1`
 
 const Admin = () => {
   return (
-    <AdminContainer>
-      <H1>INLOGGAD</H1>
-    </AdminContainer>
+    <Layout>
+      <AdminContainer>
+        <H1>INLOGGAD</H1>
+      </AdminContainer>
+    </Layout>
   );
 };
 

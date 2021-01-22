@@ -2,40 +2,6 @@ import styled from 'styled-components';
 import theme from 'styled-theming';
 import Colors from './Colors';
 
-// const buttonBackgroundColor = theme.variants('mode', 'kind', {
-//   teal: { light: Colors.teal, dark: Colors.blue },
-//   tealLight: { light: Colors.tealLight, dark: Colors.red },
-//   red: { light: Colors.red, dark: Colors.blue },
-//   blue: { light: Colors.blue, dark: Colors.red },
-//   gray: { light: Colors.grayDark, dark: Colors.grayDark },
-// });
-
-// const buttonColor = theme.variants('mode', 'kind', {
-//   teal: { light: Colors.white, dark: Colors.white },
-//   tealLight: { light: Colors.white, dark: Colors.white },
-//   red: { light: Colors.black, dark: Colors.white },
-//   blue: { light: Colors.white, dark: Colors.black },
-// });
-
-// const buttonBorderColor = theme.variants('mode', 'kind', {
-//   teal: { light: Colors.tealBorder, dark: Colors.redBorder },
-//   tealLight: { light: Colors.tealLightBorder, dark: Colors.redBorder },
-//   red: { light: Colors.redBorder, dark: Colors.blueBorder },
-//   blue: { light: Colors.blueBorder, dark: Colors.redBorder },
-// });
-
-// const buttonBackgroundColorDisabled = theme.variants('mode', 'kind', {
-//   teal: { light: Colors.grayDark, dark: Colors.grayDark },
-//   red: { light: Colors.grayDark, dark: Colors.grayDark },
-//   blue: { light: Colors.grayDark, dark: Colors.grayDark },
-// });
-
-// const buttonBorderColorDisabled = theme.variants('mode', 'kind', {
-//   teal: { light: Colors.grayDarkBorder, dark: Colors.grayDarkBorder },
-//   red: { light: Colors.grayDarkBorder, dark: Colors.grayDarkBorder },
-//   blue: { light: Colors.grayDarkBorder, dark: Colors.grayDarkBorder },
-// });
-
 export const PrimaryBackground = theme('mode', {
   light: Colors.teal,
   dark: Colors.darkBlue,

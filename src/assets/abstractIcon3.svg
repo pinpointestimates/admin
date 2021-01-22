@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Teasersite---sektion-3" transform="translate(-31.000000, -666.000000)">
+            <g id="Group-2" transform="translate(31.000000, 666.000000)">
+                <circle id="Oval" fill="#1F2344" cx="40" cy="40" r="40"></circle>
+                <path d="M41.0647703,17.9366065 C28.2340941,17.9366065 17.8310776,28.3383844 17.8310776,41.1702991 C17.8310776,47.3546379 20.2525441,52.9692199 24.1912979,57.1333992 L57.1158111,24.3810517 C52.9442002,20.3915152 47.2924601,17.9366065 41.0647703,17.9366065" id="Fill-8" fill="#F95759"></path>
+                <path d="M51.5662651,40.7222735 C51.5662651,46.4447733 46.9276605,51.0843373 41.2048193,51.0843373 C35.481978,51.0843373 30.8433735,46.4447733 30.8433735,40.7222735 C30.8433735,34.9997736 35.481978,30.3614458 41.2048193,30.3614458 C46.9276605,30.3614458 51.5662651,34.9997736 51.5662651,40.7222735" id="Fill-11" fill="#1FB4A8"></path>
+            </g>
+        </g>
+    </g>
+</svg>
