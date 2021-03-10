@@ -1,7 +1,7 @@
 import React from 'react';
-import Colors from '../stylings/Colors';
 import styled from 'styled-components';
 import { Layout } from '../components/Layout';
+import Colors from '../stylings/Colors';
 
 const AdminContainer = styled.div`
   display: flex;
